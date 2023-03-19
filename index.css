@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+    /*Family*/
+    --secundaryFont: 'ABeeZee', sans-serif;
+    --principalFont: 'Montserrat', sans-serif;
+    /*Color*/
+    --principalFontColor: #FFF;
+    --secundaryFontColor: #1a1a1a;
+    --ternaryFontColor: #0548fe;
+    --quaternaryFontColor: #fed005;
+    /*Bg Color*/
+    --principalBgColor: #d7d7d7;
+    --secondaryBgColor: #0548fe;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 00;
+    padding: 0;
+    font-family: var(--principalFont);
+}
+
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+/*Header*/
+header{
+    width: 100%;
+    padding: 10px;    
+    background-color: var(--secondaryBgColor);
+    color: var(--principalFontColor);
+}
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor h1{
+    font-family: var(--secundaryFont);
+}
+
+nav > a{
+    color: var(--principalFontColor);
+    text-decoration: none;
+    transition: all ease-in-out .2s;
+    border-bottom: 2px solid transparent;
+}
+
+nav > a:hover{
+    color: var(--secundaryFontColor);
+    border-color:var(--quaternaryFontColor);
+}
+/*Sobre a Loja*/
+#loja{
+    padding: 1.25em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% auto;
+    row-gap: 1.25em;
+}
+#loja > picture{
+    overflow: hidden;
+}
+#loja > picture img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#loja-info{
+  flex-direction: column;
+  gap: 25px;
+}
+
+#loja-info section{
+ border-bottom: 5px solid var(--secondaryBgColor);
+}
+#loja-info section h2{
+    font-style: italic;
+    font-family: var(--secundaryFont);
+    color: var(--ternaryFontColor);
+    margin-bottom: 0.3125em;    
+}
+#produtos{
+    width: 100%;
+    min-height: 31.25em;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    
+    gap: 30px;
+}
+.produto-card{
+    flex-direction: column;    
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+}
+.produto-card > picture img{
+    width: 100%;
+}
+
+.shoe-info h3{
+    color: var(--ternaryFontColor);
+    font-size: 1.4em;
+}
+.shoe-info p{
+    font-size: 1.4em;
+}
+.shoe-info p strong{
+    color: var(--quaternaryFontColor);
+}
+.shoe-info button{
+    width: 100%;
+    height: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--quaternaryFontColor);
+    font-weight: bold;
+    background-color: var(--secondaryBgColor)
+
+}

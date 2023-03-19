@@ -1,0 +1,9 @@
+.flex-row{
+    display: flex;
+    gap: 10px;
+}
+.max-w-1000 {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
